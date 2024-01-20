@@ -215,11 +215,19 @@
 		$(window).stellar();
 	};
 
+	var overflowchecker = function() {
+		document.querySelectorAll('*').forEach(elem => {
+			if (elem.offsetWidth > document.documentElement.offsetWidth) {
+				console.log('Problem child: ', elem);
+			}
+		  });
+	};
+
 	
 	$(function(){
 		mobileMenuOutsideClick();
 		parallax();
-		offcanvasMenu();
+		//offcanvasMenu();
 		burgerMenu();
 		contentWayPoint();
 		dropdown();
@@ -228,6 +236,8 @@
 		loaderPage();
 		counter();
 		counterWayPoint();
+		overflowchecker();
+		console.log('Pippo');
 	});
 
 
