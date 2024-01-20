@@ -1537,6 +1537,58 @@ form label {
   outline: none;
 }
 
+.gototoppippis {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.gototoppippis.active {
+  opacity: 1;
+  visibility: visible;
+}
+.gototoppippis a {
+  width: 100px;
+  height: 100px;
+  display: table;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border-radius: 50px;
+}
+.gototoppippis a i {
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.gototoppippis a:hover, .gototoppippis a:active, .gototoppippis a:focus {
+  text-decoration: none;
+  outline: none;
+}
+.gototoppippis img {
+  width: 100px;
+  height: 100px;
+}
+.gototoppippis .logo {
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border-radius: 50px;
+  background-image: url("../img/PippiViceVersa.png"); /* Path to your logo image */
+  background-size: cover; /* This ensures that the logo covers the whole div */
+  background-repeat: no-repeat;
+}
+
 .fh5co-nav-toggle {
   width: 25px;
   height: 25px;

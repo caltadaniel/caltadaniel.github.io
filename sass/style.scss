@@ -1529,6 +1529,53 @@ form {
 	}	
 }
 
+.gototoppippis
+{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
+	opacity: 0;
+	visibility: hidden;
+	@include transition(.5s);
+	&.active {
+		opacity: 1;
+		visibility: visible;
+	}
+	a{
+		width: 100px;
+		height: 100px;
+		display: table;
+		background: rgba(0,0,0,.5);
+		color: $brand-white;
+		text-align: center;
+		@include border-radius(50px);
+		i {
+			height: 50px;
+			display: table-cell;
+			vertical-align: middle;
+
+		}
+		&:hover, &:active, &:focus {
+			text-decoration: none;
+			outline: none;
+		}
+	}
+	img{
+		width: 100px;
+		height: 100px;
+	}
+	.logo{
+		width: 100px;
+		height: 100px;
+		@include border-radius(50px);
+		background-image: url('../img/PippiViceVersa.png');  /* Path to your logo image */
+    	background-size: cover;  /* This ensures that the logo covers the whole div */
+    	background-repeat: no-repeat;
+	}
+
+}
+
 
 
 // Burger Menu

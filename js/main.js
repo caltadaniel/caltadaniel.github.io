@@ -177,6 +177,8 @@
 			} else {
 				$('.js-top').removeClass('active');
 			}
+			let image = document.getElementById("rollme");
+			image.style.transform = "rotate("+window.scrollY/2 + "deg)";
 
 		});
 	
