@@ -16,7 +16,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #828282;
-  background: #f7f4e5;
+  background: #f4f0ed;
 }
 
 #page {
@@ -28,11 +28,11 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.offcanvas #page {
+.offcanvas_custom #page {
   overflow: hidden;
   position: absolute;
 }
-.offcanvas #page:after {
+.offcanvas_custom #page:after {
   -webkit-transition: 2s;
   -o-transition: 2s;
   transition: 2s;
@@ -86,6 +86,8 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .wedding-nav {
   position: absolute;
+  display: flex;
+  align-items: center;
   top: 0;
   margin: 0;
   padding: 0;
@@ -106,7 +108,6 @@ h1, h2, h3, h4, h5, h6, figure {
   font-family: "Quicksand", sans-serif;
 }
 .wedding-nav a {
-  padding: 5px 10px;
   color: #4e80b1;
   text-decoration: none;
 }
@@ -115,8 +116,19 @@ h1, h2, h3, h4, h5, h6, figure {
     display: none;
   }
 }
+.wedding-nav #logo {
+  width: 80px;
+  height: 80px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border-radius: 50px;
+  background-image: url("../img/PippiViceVersa.png"); /* Path to your logo image */
+  background-size: cover; /* This ensures that the logo covers the whole div */
+  background-repeat: no-repeat;
+}
 .wedding-nav ul {
-  padding: 0;
+  padding: 20px 0 0 0;
   margin: 2px 0 0 0;
 }
 .wedding-nav ul li {
@@ -309,7 +321,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(119, 119, 119, 0.1);
 }
 .fh5co-cover > .fh5co-container {
   position: relative;
@@ -890,8 +902,8 @@ form label {
 #fh5co-counter .display-tc .btn,
 .fh5co-cover .display-tc .btn {
   padding: 15px 20px;
-  background: #fff !important;
-  color: #4e80b1;
+  background: #cb7428 !important;
+  color: #fff;
   border: none !important;
   font-size: 14px;
   text-transform: uppercase;
@@ -1437,9 +1449,9 @@ form label {
 }
 
 #fh5co-offcanvas {
-  position: absolute;
+  position: absolute !important;
   z-index: 1901;
-  width: 270px;
+  width: 270px !important;
   background: black;
   top: 0;
   right: 0;
@@ -1456,7 +1468,7 @@ form label {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.offcanvas #fh5co-offcanvas {
+.offcanvas_custom #fh5co-offcanvas {
   -moz-transform: translateX(0px);
   -webkit-transform: translateX(0px);
   -ms-transform: translateX(0px);
@@ -1482,11 +1494,11 @@ form label {
   padding-left: 20px;
   display: none;
 }
-#fh5co-offcanvas ul li.offcanvas-has-dropdown > a {
+#fh5co-offcanvas ul li.offcanvas_custom-has-dropdown > a {
   display: block;
   position: relative;
 }
-#fh5co-offcanvas ul li.offcanvas-has-dropdown > a:after {
+#fh5co-offcanvas ul li.offcanvas_custom-has-dropdown > a:after {
   position: absolute;
   right: 0px;
   font-family: "icomoon";
@@ -1506,7 +1518,7 @@ form label {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-#fh5co-offcanvas ul li.offcanvas-has-dropdown.active a:after {
+#fh5co-offcanvas ul li.offcanvas_custom-has-dropdown.active a:after {
   -webkit-transform: rotate(-180deg);
   -moz-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);

@@ -69,10 +69,10 @@
 			var $this = $(this);
 
 
-			if ( $('body').hasClass('overflow offcanvas') ) {
-				$('body').removeClass('overflow offcanvas');
+			if ( $('body').hasClass('overflow offcanvas_custom') ) {
+				$('body').removeClass('overflow offcanvas_custom');
 			} else {
-				$('body').addClass('overflow offcanvas');
+				$('body').addClass('overflow offcanvas_custom');
 			}
 			$this.toggleClass('active');
 			event.preventDefault();
@@ -227,7 +227,7 @@
 	$(function(){
 		mobileMenuOutsideClick();
 		parallax();
-		//offcanvasMenu();
+		offcanvasMenu();
 		burgerMenu();
 		contentWayPoint();
 		dropdown();
