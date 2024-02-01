@@ -1291,20 +1291,24 @@ form {
 		margin-bottom: 2em;
 	}
 	h2 {
-		font-size: 60px;
+		font-size: 30px;
+		margin-top: 20px;
 		margin-bottom: 10px;
 		line-height: 1.5;
 		font-weight: bold;
-		color: $brand-primary;
-		font-family: $font-secondary;
+		color: $brownish;
+		font-family: $font-primary;
 		@media screen and (max-width: $screen-sm){
 			font-size: 40px;
 		}
 	}
+	h3{
+		color: $brownish;
+	}
 	p {
 		font-size: 18px;
 		line-height: 1.5;
-		color: #828282;
+		color: $brownish;
 	}
 	span{
 		text-transform: uppercase;

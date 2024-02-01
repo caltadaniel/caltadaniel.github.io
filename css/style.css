@@ -1285,11 +1285,12 @@ form label {
   margin-bottom: 2em;
 }
 .fh5co-heading h2 {
-  font-size: 60px;
+  font-size: 30px;
+  margin-top: 20px;
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
-  color: #4e80b1;
+  color: #988871;
   font-family: "Quicksand", sans-serif;
 }
 @media screen and (max-width: 768px) {
@@ -1297,10 +1298,13 @@ form label {
     font-size: 40px;
   }
 }
+.fh5co-heading h3 {
+  color: #988871;
+}
 .fh5co-heading p {
   font-size: 18px;
   line-height: 1.5;
-  color: #828282;
+  color: #988871;
 }
 .fh5co-heading span {
   text-transform: uppercase;
