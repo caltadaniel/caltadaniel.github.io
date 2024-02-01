@@ -180,6 +180,31 @@ h1, h2, h3, h4, h5, h6, figure {
   background: $brand-primary;
 }
 
+.party_nav{
+	ul {
+		padding: 20px 0 0 0;
+		margin: 2px 0 0 0;
+		li {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			display: inline;
+			a {
+				color: $brand-white;
+				text-decoration: none;
+			}
+		}
+
+	}
+	a {
+		//padding: 5px 10px;
+		color: $brand-white;
+		text-decoration: none;
+		
+	}
+
+}
+
 
 
 .wedding-nav {
@@ -330,6 +355,31 @@ h1, h2, h3, h4, h5, h6, figure {
 			}
 		}
 	}
+}
+
+//ovverride the menu color for the party page
+.party {
+    .wedding-nav {
+        a {
+            color: $brand-gray; 
+        }
+		ul {
+			li {
+				a {
+					color: $brand-white;
+					@include transition(.5s);
+					&:hover,&:focus, &:active {
+						color: rgb(197, 197, 197);
+					}
+				}
+				&.active {
+					> a {
+						color: $brand-primary!important;
+					}
+				}
+			}
+		}
+    }
 }
 // #fh5co-header,
 // #fh5co-counter,
@@ -887,6 +937,41 @@ form {
 	}
 }
 
+#party-header,
+.fh5co-cover{
+	.overlay {
+		z-index:0;
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0, 0, 0, 0.1);
+	}
+	.title{
+		display: table-cell!important;
+		vertical-align: middle;
+		h1, h2, h3 {
+			margin: 0;
+			padding: 0;
+			//color: rgba(255,255,255,1);
+			color: $brand-lighter;
+		}
+		h1 {
+			margin-bottom: 0px;
+			font-size: 70px;
+			line-height: 1.5;
+			font-family: $font-primary;
+			//font-weight: bold;
+			@media screen and (max-width: $screen-sm) {
+				font-size: 40px;
+			}
+			@media screen and (max-width: $screen-xs) {
+				font-size: 30px;
+			}
+		}
+	}
+}
 
 #fh5co-header,
 #fh5co-counter,
