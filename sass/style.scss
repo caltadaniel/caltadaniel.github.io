@@ -1296,20 +1296,20 @@ form {
 		margin-top: 20px;
 		margin-bottom: 10px;
 		line-height: 1.5;
-		font-weight: bold;
-		color: $brownish;
+		//font-weight: bold;
+		color: $text_darker;
 		font-family: $font-primary;
 		@media screen and (max-width: $screen-sm){
 			font-size: 40px;
 		}
 	}
 	h3{
-		color: $brownish;
+		color: $text_darker;
 	}
 	p {
 		font-size: 18px;
 		line-height: 1.5;
-		color: $brownish;
+		color: $text_darker;
 	}
 	span{
 		text-transform: uppercase;
