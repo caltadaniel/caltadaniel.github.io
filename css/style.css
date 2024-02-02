@@ -1601,6 +1601,7 @@ form label {
   transform: translateX(0px);
 }
 #fh5co-offcanvas a {
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
 }
 #fh5co-offcanvas a:hover {
