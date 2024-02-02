@@ -909,6 +909,49 @@ form label {
   }
 }
 
+#faq-header .overlay,
+.fh5co-cover .overlay {
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+#faq-header .title,
+.fh5co-cover .title {
+  display: table-cell !important;
+  vertical-align: middle;
+}
+#faq-header .title h1, #faq-header .title h2, #faq-header .title h3,
+.fh5co-cover .title h1,
+.fh5co-cover .title h2,
+.fh5co-cover .title h3 {
+  margin: 0;
+  padding: 0;
+  color: #e9e9e9;
+}
+#faq-header .title h1,
+.fh5co-cover .title h1 {
+  margin-bottom: 0px;
+  font-size: 70px;
+  line-height: 1.5;
+  font-family: "Quicksand", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  #faq-header .title h1,
+  .fh5co-cover .title h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #faq-header .title h1,
+  .fh5co-cover .title h1 {
+    font-size: 30px;
+  }
+}
+
 #fh5co-header .display-tc,
 #fh5co-counter .display-tc,
 .fh5co-cover .display-tc {

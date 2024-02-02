@@ -974,6 +974,42 @@ form {
 	}
 }
 
+#faq-header,
+.fh5co-cover{
+	.overlay {
+		z-index:0;
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0, 0, 0, 0.5);
+	}
+	.title{
+		display: table-cell!important;
+		vertical-align: middle;
+		h1, h2, h3 {
+			margin: 0;
+			padding: 0;
+			//color: rgba(255,255,255,1);
+			color: $brand-lighter;
+		}
+		h1 {
+			margin-bottom: 0px;
+			font-size: 70px;
+			line-height: 1.5;
+			font-family: $font-primary;
+			//font-weight: bold;
+			@media screen and (max-width: $screen-sm) {
+				font-size: 40px;
+			}
+			@media screen and (max-width: $screen-xs) {
+				font-size: 30px;
+			}
+		}
+	}
+}
+
 #fh5co-header,
 #fh5co-counter,
 .fh5co-cover {
