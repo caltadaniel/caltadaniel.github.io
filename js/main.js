@@ -483,9 +483,10 @@ $(document).ready(function () {
 		var data = $(this).serialize(); //serialize the form
 		console.log("debug 1");
 		$('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
-	
+		
 		if (MD5($('#invite_code').val()) !== '9696562bdabb1b6d9e9d136da628f584'
-			&& MD5($('#invite_code').val()) !== '9696562bdabb1b6d9e9d136da628f584') {
+			&& MD5($('#invite_code').val()) !== 'da7c0110f655c67bc1418cb2830d333d' 
+			&& MD5($('#invite_code').val()) !== '4002cf55c8f0eef663129474d4e13b7c') { 
 			$('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
 		} else {
 			$.post('https://script.google.com/macros/s/AKfycbxrLn-S3gG3APgrte2O60D4Ak6wjpjKzTvGxgmld0bg0jk1uUIX7En2kH1eHG7OXUKSTQ/exec', data)
