@@ -62,7 +62,7 @@
                                 <li><a href="faq.html">FAQs</a></li>
                                 <li><a href="registry.html">Registry</a></li>
                                 <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="#">RSVP</a></li>
+                                <li><a href="#rsvp">RSVP</a></li>
                             </ul>
                         </div>
                     </div>
@@ -83,7 +83,7 @@
                                     <h3>(again)</h3>
                                     <div class="whitespace"></div>
                                     <!-- <div class="simply-countdown simply-countdown-one"></div> -->
-                                    <p><a href="#" class="btn btn-default btn-sm">RSVP</a></p>
+                                    <p><a href="#rsvp" class="btn btn-default btn-sm">RSVP</a></p>
                                     <h3>By February 15</h3>
                                 </div>
                             </div>
@@ -125,36 +125,106 @@
                             <p>STOP</p>
                         </div>
                     </div>
-                    <div class="couple-wrap animate-box">
-                        <div class="couple-half">
-                            <div class="groom">
-                                <img src="img/margherota.jpg" alt="groom" class="img-responsive">
+                    <div class="row">
+                        <div class="couple-wrap animate-box">
+                            <div class="couple-half">
+                                <div class="groom">
+                                    <img src="img/margherota.jpg" alt="groom" class="img-responsive">
+                                </div>
+                                <div class="desc-groom">
+                                    <h3>Margherota</h3>
+                                    <p>Dicono che nessuno abbia tanto beta carotene quanto lei. 
+                                        Ha dovuto persino chiedere un ingiunzione di allontanamento per Bugs Bunny. 
+                                        Leggenda vuole che la margherota sia un ibrido tra una margherita e una carota 
+                                        e che ci sia un solo esemplare al mondo.</p>
+                                </div>
                             </div>
-                            <div class="desc-groom">
-                                <h3>Margherota</h3>
-                                <p>Dicono che nessuno abbia tanto beta carotene quanto lei. 
-                                    Ha dovuto persino chiedere un ingiunzione di allontanamento per Bugs Bunny. 
-                                    Leggenda vuole che la margherota sia un ibrido tra una margherita e una carota 
-                                    e che ci sia un solo esemplare al mondo.</p>
-                            </div>
-                        </div>
-                        <p class="heart text-center"><i class="icon-heart2"></i></p>
-                        <div class="couple-half">
-                            <div class="bride">
-                                <img src="img/danibarbie.jpg" alt="groom" class="img-responsive">
-                            </div>
-                            <div class="desc-bride">
-                                <h3>Darbie</h3>
-                                <p>Un modello piu unico che raro, prodotto a tiratura limitata dalla Mattel. 
-                                    Dotato di un sarcasmo tutto suo puo essere acquistato in tanti kit diversi con tanti accessori.
-                                    Compra un Darbie oggi, e in omaggio riceverai il magico imbrago con le paiette.
-                                </p>
+                            <p class="heart text-center"><i class="icon-heart2"></i></p>
+                            <div class="couple-half">
+                                <div class="bride">
+                                    <img src="img/danibarbie.jpg" alt="groom" class="img-responsive">
+                                </div>
+                                <div class="desc-bride">
+                                    <h3>Darbie</h3>
+                                    <p>Un modello piu unico che raro, prodotto a tiratura limitata dalla Mattel. 
+                                        Dotato di un sarcasmo tutto suo puo essere acquistato in tanti kit diversi con tanti accessori.
+                                        Compra un Darbie oggi, e in omaggio riceverai il magico imbrago con le paiette.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div id="rsvp">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2 text-center fh5co-heading ">
+                            <h3>Che cosa stai aspettando?</h3>
+                            <p>Ci farebbe molto piacere ricevere una risposta prima del 25 Febbraio '24</p>
+                            <form class="rsvp-form" id="rsvp_form" action="" >
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group"><input type="email" name="email" class="form-control" placeholder="Your email" required></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group"><input type="text" name="name" class="form-control" placeholder="Your name" required></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group"> 
+                                            <select class="form-control" id="adultSelect" name="adulti" required>
+                                                <option selected>Adulti totali</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <select class="form-control" id="childSelect" name="bambini" required>
+                                                <option selected>Bambini totali (<15)</option>
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="note" id="note" placeholder="Note aggiuntive" row="7"></textarea> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-md-6 offset-md-3">
+                                            <input type="number" name="invite_code" id="invite_code" class="form-control" min="0" placeholder="Invite code" required>
+                                        </div>    
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-md-12" id="alert-wrapper"></div>  
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn rsvp_btn">
+                                    Invia
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
 
         <div class="gototoppippis js-top">
             <a href="#" class="js-gotop"><div class="logo" id="rollme"></div></a>
@@ -181,6 +251,7 @@
 
         <!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
         <script src="js/simplyCountdown.js"></script>
+        
         <!-- Main -->
         <script src="js/main.js"></script>
 

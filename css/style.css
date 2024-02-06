@@ -103,6 +103,36 @@ h1, h2, h3, h4, h5, h6, figure {
   text-decoration: none;
 }
 
+#rsvp {
+  padding-bottom: 20px;
+}
+#rsvp .rsvp-form .rsvp_btn {
+  padding: 15px 0;
+  border-radius: 3px;
+  width: 100%;
+  font-size: 13px;
+}
+#rsvp .rsvp-form .form-group {
+  width: 100%;
+  height: 55px;
+  margin: 0 auto 10px;
+}
+#rsvp .rsvp-form .btn {
+  border-radius: 12px;
+  padding: 15px 20px;
+  background: #cb7428 !important;
+  color: #fff;
+  border: none !important;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+#rsvp .rsvp-form .btn:hover {
+  background: #4e80b1 !important;
+  -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
+  -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
+  box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
+}
+
 .wedding-nav {
   position: absolute;
   display: flex;
@@ -1160,7 +1190,7 @@ form label {
 #fh5co-couple,
 #fh5co-gallery,
 .fh5co-section {
-  padding: 7em 0;
+  padding: 2em 0;
   clear: both;
 }
 @media screen and (max-width: 768px) {
@@ -1173,7 +1203,7 @@ form label {
   #fh5co-couple,
   #fh5co-gallery,
   .fh5co-section {
-    padding: 3em 0;
+    padding: 2em 0;
   }
 }
 
