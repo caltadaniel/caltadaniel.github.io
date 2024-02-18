@@ -17,7 +17,10 @@ $brand-tertiary: #b2a68f;
 
 $star_background: #f4f0ed;// #f7f4e5;
 $text_darker:#af867b;// #d48e7c;
+$text_darker_less:#906e65;// #d48e7c;
+$text_darker_more:#6d544d;// #d48e7c;
 $brownish: #988871;
+$brownish_darker: #6d6251;
 
 $brand-white: #fff;
 $brand-black: #000;
@@ -402,6 +405,45 @@ h1, h2, h3, h4, h5, h6, figure {
 			}
 		}
     }
+}
+
+#party_section{
+	h3{
+		color : $text_darker_more;
+		font-size: 26px;
+		//margin-bottom: 30px;
+		@media screen and (max-width: $screen-xs) {
+			font-size: 20px;
+		}
+		
+	}
+	
+	.programm{
+		margin-bottom: 10px;
+		h4{
+			color : $text_darker_less;
+			font-weight: bold;
+			font-size: 18px;
+			margin-bottom: 10px;
+			//margin-bottom: 30px;
+			@media screen and (max-width: $screen-xs) {
+				font-size: 16px;
+			}
+		}
+		hr {
+			width: 70%; // Imposta la larghezza al 70% della larghezza del suo contenitore
+			margin: 0 auto; // Centra orizzontalmente l'elemento hr
+			border: none; // Rimuove il bordo predefinito dell'elemento hr
+			border-top: 1px solid black; // Aggiunge una linea superiore con un bordo nero
+		  }
+
+		p{
+			font-size: 15px;
+			line-height:1;
+			margin-bottom: 10px;
+		}
+	}
+	
 }
 
 #fh5co-counter,

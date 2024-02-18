@@ -293,6 +293,41 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #4e80b1 !important;
 }
 
+#party_section h3 {
+  color: #6d544d;
+  font-size: 26px;
+}
+@media screen and (max-width: 480px) {
+  #party_section h3 {
+    font-size: 20px;
+  }
+}
+#party_section .programm {
+  margin-bottom: 10px;
+}
+#party_section .programm h4 {
+  color: #906e65;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 480px) {
+  #party_section .programm h4 {
+    font-size: 16px;
+  }
+}
+#party_section .programm hr {
+  width: 70%;
+  margin: 0 auto;
+  border: none;
+  border-top: 1px solid black;
+}
+#party_section .programm p {
+  font-size: 15px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
 #fh5co-counter,
 #fh5co-event,
 .fh5co-bg {
