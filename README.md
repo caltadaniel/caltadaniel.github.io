@@ -1,2 +1,3 @@
+s
 npm install
 gulp
