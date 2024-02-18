@@ -407,7 +407,8 @@ h1, h2, h3, h4, h5, h6, figure {
     }
 }
 
-#party_section{
+#party_section,
+#travel_section{
 	h3{
 		color : $text_darker_more;
 		font-size: 26px;
@@ -415,7 +416,6 @@ h1, h2, h3, h4, h5, h6, figure {
 		@media screen and (max-width: $screen-xs) {
 			font-size: 20px;
 		}
-		
 	}
 	
 	.programm{
@@ -817,16 +817,22 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 }
 
+.standard-content{
+	margin-bottom: 1em;
+}
 .fh5co-heading {
 	margin-bottom: 5em;
 	&.fh5co-heading-sm {
 		margin-bottom: 2em;
 	}
+	
+	
 	h2 {
 		font-size: 30px;
 		margin-top: 20px;
 		margin-bottom: 10px;
 		line-height: 1.5;
+		
 		//font-weight: bold;
 		color: $text_darker;
 		font-family: $font-primary;

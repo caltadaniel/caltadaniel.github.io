@@ -293,36 +293,43 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #4e80b1 !important;
 }
 
-#party_section h3 {
+#party_section h3,
+#travel_section h3 {
   color: #6d544d;
   font-size: 26px;
 }
 @media screen and (max-width: 480px) {
-  #party_section h3 {
+  #party_section h3,
+  #travel_section h3 {
     font-size: 20px;
   }
 }
-#party_section .programm {
+#party_section .programm,
+#travel_section .programm {
   margin-bottom: 10px;
 }
-#party_section .programm h4 {
+#party_section .programm h4,
+#travel_section .programm h4 {
   color: #906e65;
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 480px) {
-  #party_section .programm h4 {
+  #party_section .programm h4,
+  #travel_section .programm h4 {
     font-size: 16px;
   }
 }
-#party_section .programm hr {
+#party_section .programm hr,
+#travel_section .programm hr {
   width: 70%;
   margin: 0 auto;
   border: none;
   border-top: 1px solid black;
 }
-#party_section .programm p {
+#party_section .programm p,
+#travel_section .programm p {
   font-size: 15px;
   line-height: 1;
   margin-bottom: 10px;
@@ -762,6 +769,10 @@ h1, h2, h3, h4, h5, h6, figure {
     padding-left: 0;
     text-align: center;
   }
+}
+
+.standard-content {
+  margin-bottom: 1em;
 }
 
 .fh5co-heading {
