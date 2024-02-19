@@ -496,7 +496,8 @@ $(document).ready(function () {
 						$('#alert-wrapper').html(alert_markup('danger', data.message));
 					} else {
 						$('#alert-wrapper').html('');
-						$('#rsvp-modal').modal('show');
+						//$('#rsvp-modal').modal('show');
+						$('#confirmationModal').modal('show');
 					}
 				})
 				.fail(function (data) {
