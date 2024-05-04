@@ -509,3 +509,34 @@ $(document).ready(function () {
 
 });
 
+// handle youtube video
+
+var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('youtube-video', {
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    }
+
+    var done = false;
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+            setTimeout(stopVideo, 6000);
+            done = true;
+        }
+    }
+
+    function stopVideo() {
+        player.seekTo(30); // Change this to the start time
+        if (player.getPlayerState() === 0) { // If video ended
+            player.playVideo(); // Start again
+        }
+    }
+
