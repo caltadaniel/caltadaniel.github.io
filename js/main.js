@@ -528,13 +528,13 @@ var player;
     var done = false;
     function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING && !done) {
-            setTimeout(stopVideo, 6000);
+            setTimeout(stopVideo, 60000);
             done = true;
         }
     }
 
     function stopVideo() {
-        player.seekTo(30); // Change this to the start time
+        player.seekTo(221); // Change this to the start time
         if (player.getPlayerState() === 0) { // If video ended
             player.playVideo(); // Start again
         }
