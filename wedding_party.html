@@ -43,6 +43,11 @@
         <!--[if lt IE 9]>
         <script src="js/respond.min.js"></script>
         <![endif]-->
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>
     </head>
     <body class="party">
         <div class="fh5co-loader"></div>
@@ -127,7 +132,15 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-8 offset-md-2 ">
+                    <div class="col-md-8 offset-md-2 text-center fh5co-heading animate-box" >
+                        <h3 id="locationo"><strong>COME ARRIVARE</strong></h3>
+                        <p>Per qualunque informazione o necessità riguardo al parcheggio, vi chiediamo di contattare Alfredo Caltabiano al numero +39 3284750190</p>
+                        <p>Il parcheggio del Castello di Paderna si trova dietro la <a href="https://maps.app.goo.gl/MrKWTFnBGRZCtJsi6">Chiesa di San Pietro Apostolo.</a></p>
+                        <p>Una volta parcheggiato, proseguite a piedi fino al cancello, situato dietro la sagrestia della chiesa, che vi farà entrare nel parco del castello</p>
+                        <p>Entrati nel parco, proseguite diritto fino al luogo della cerimonia</p>
+                        <img src="img/Map.png" class="img-fluid" alt="How to get there">
+                        <br>
+                        <br>
                         <div class="embed-responsive embed-responsive-4by3">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90237.22317809932!2d9.671637769628894!3d45.026686991245896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4780ec2765f208eb%3A0xdc832ed07337527c!2sPaderna%20Castle!5e0!3m2!1sen!2sus!4v1708229684589!5m2!1sen!2sus" 
@@ -233,6 +246,30 @@
         <script src="js/simplyCountdown.js"></script>
         <!-- Main -->
         <script src="js/main.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Check if the hash exists in the URL
+                if (window.location.hash) {
+                    const hash = window.location.hash;
+                    const element = document.querySelector(hash);
+                    if (element) {
+                        element.scrollIntoView({ behavior: "smooth" });
+                    }
+                }
+        
+                // Add smooth scrolling to all links
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener("click", function(event) {
+                        event.preventDefault();
+                        const targetID = this.getAttribute("href");
+                        const targetElement = document.querySelector(targetID);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({ behavior: "smooth" });
+                        }
+                    });
+                });
+            });
+        </script>
     </body>
 
 </html>
