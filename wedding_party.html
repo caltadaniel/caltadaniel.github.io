@@ -133,7 +133,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-8 offset-md-2 text-center fh5co-heading animate-box" >
-                        <h3 id="locationo"><strong>COME ARRIVARE</strong></h3>
+                        <h3 id="location"><strong>COME ARRIVARE</strong></h3>
                         <p>Per qualunque informazione o necessità riguardo al parcheggio, vi chiediamo di contattare Alfredo Caltabiano al numero +39 3284750190</p>
                         <p>Il parcheggio del Castello di Paderna si trova dietro la <a href="https://maps.app.goo.gl/MrKWTFnBGRZCtJsi6">Chiesa di San Pietro Apostolo.</a></p>
                         <p>Una volta parcheggiato, proseguite a piedi fino al cancello, situato dietro la sagrestia della chiesa, che vi farà entrare nel parco del castello</p>
@@ -248,14 +248,21 @@
         <script src="js/main.js"></script>
         <script>
             document.addEventListener("DOMContentLoaded", function() {
-                // Check if the hash exists in the URL
-                if (window.location.hash) {
-                    const hash = window.location.hash;
-                    const element = document.querySelector(hash);
-                    if (element) {
-                        element.scrollIntoView({ behavior: "smooth" });
+                // Function to handle smooth scrolling to an ID with a delay
+                function scrollToHashWithDelay() {
+                    if (window.location.hash) {
+                        const hash = window.location.hash;
+                        setTimeout(() => {
+                            const element = document.querySelector(hash);
+                            if (element) {
+                                element.scrollIntoView({ behavior: "smooth" });
+                            }
+                        }, 500); // Adjust the delay time (in milliseconds) as needed
                     }
                 }
+        
+                // Execute the function after the page loads
+                scrollToHashWithDelay();
         
                 // Add smooth scrolling to all links
                 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -264,7 +271,9 @@
                         const targetID = this.getAttribute("href");
                         const targetElement = document.querySelector(targetID);
                         if (targetElement) {
-                            targetElement.scrollIntoView({ behavior: "smooth" });
+                            setTimeout(() => {
+                                targetElement.scrollIntoView({ behavior: "smooth" });
+                            }, 500); // Adjust the delay time (in milliseconds) as needed
                         }
                     });
                 });
